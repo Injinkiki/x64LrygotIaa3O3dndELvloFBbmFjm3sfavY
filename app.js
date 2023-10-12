@@ -13,4 +13,9 @@ app.get('/', (req, res) = {
   res.sendFile(__dirname + '/index.html')
 })
 
+let uptime = 0 
+setInterval(() = {
+  uptime++ 
+}, 1000)
+
 app.listen(7860)
